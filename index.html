@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+
+<style type="text/css">
+html, body {
+ margin: 0px;
+ padding: 0px;
+ border: 0px;
+ }
+
+
+body{background-image: url(95.gif); }
+#header{height: 150px;text-align: center;background-image: url(line.gif);background-repeat:repeat-x;}
+#footer{height: 150px;
+ background-image: url(inv.gif);
+ background-repeat:repeat-x;
+padding-right: 100px;font:arial,sans-serif;
+text-align: right;
+
+}
+#logo_text{float: left;padding-left: 100px;font:25px arial,sans-serif;}
+div.inputdata{
+width: 350px;
+margin-right: auto;
+margin-left: auto;
+border:thin solid gray;
+padding:10px;
+}
+
+
+    div.inputdata label{
+    float:left;
+    margin-right:10px;
+    padding:5px 0;
+    color:gray;
+    }
+
+
+
+        div.inputdata input{
+        width:100%;
+        padding-top:8px;
+        border:thin solid gray;
+        }
+
+</style>
+
+
+
+   </head>
+
+<body>
+
+<div id="daddy" class="wrapper">
+<div id="header">
+    <img src="logo.png">
+    <div id="logo_text">
+    <h3>The Piggy Mailer</h3>
+</div>
+</div>
+
+<div class="inputdata">
+   <form action="cgi-bin/env.py" method="post" enctype="multipart/form-data">
+
+    <label for="mail_from"> Mail From: </label>
+    <span><input type="text" name="mail_from" /></span></br>
+
+        <label for="mail_sub"> Mail Subject : </label>
+    <span><input type="text" name="mail_sub" /></span></br>
+
+        <label for="mail_count"> Burst Count: </label>
+    <span><input type="text"  name="mail_count" /></span></br>
+
+        <label for="file"> CSV Upload ( only upload csv files !) </label></br>
+    <input type="file" name="file">
+
+    </br>
+    </br>
+
+     <input type="submit" name="submit" value="Submit">
+</form>
+
+</div>
+</div>
+<div id="push"></div>
+<div id="footer">
+</br>
+ <h5>Footer stays here.. its a bitch</h4>
+</div>
+
+
+</body>
+</html>
